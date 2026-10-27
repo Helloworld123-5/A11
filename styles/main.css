@@ -239,3 +239,28 @@ img {
         background-color: #800000;
     }
 }
+/* Fix SlickNav dropdowns on mobile */
+@media screen and (max-width: 767px) {
+    .slicknav_nav .dropdown {
+        position: static;
+        display: block;
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .slicknav_nav li {
+        display: block;
+        width: 100%;
+        float: none;
+        text-align: left;
+    }
+
+    .slicknav_nav a {
+        margin: 2px 5px;
+    }
+
+    .slicknav_nav ul {
+        position: static;
+        width: 100%;
+    }
+}
