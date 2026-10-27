@@ -264,3 +264,28 @@ img {
         width: 100%;
     }
 }
+/* Prevent desktop dropdown styles from affecting SlickNav */
+@media screen and (max-width: 767px) {
+    .slicknav_nav .submenu {
+        position: static;
+    }
+
+    .slicknav_nav .dropdown {
+        position: static;
+        display: none;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .slicknav_nav .slicknav_open > .dropdown {
+        display: block;
+    }
+
+    .slicknav_nav .submenu:hover > .dropdown {
+        display: none;
+    }
+
+    .slicknav_nav .submenu.slicknav_open > .dropdown {
+        display: block;
+    }
+}
