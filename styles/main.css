@@ -184,3 +184,41 @@ footer {
 
 .menu > li:first-child a { margin-left: 0; }
 .menu > li:last-child a { margin-right: 0; }
+/* Desktop navigation */
+.slicknav_menu {
+    display: none;
+}
+
+/* Mobile screens */
+@media screen and (max-width: 767px) {
+    .navbar > .menu {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    section, aside {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    header img {
+        display: none;
+    }
+
+    header {
+        text-align: center;
+    }
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
