@@ -94,10 +94,12 @@
 <script>
     $(document).ready(function() {
         $('.menu').slicknav({
-            prependTo: '.navbar'
-        });
-    });
+    prependTo: '.navbar',
+    allowParentLinks: false,
+    showChildren: false,
+    nestedParentLinks: false
+});
 </script>
-	
+
 </body>
 </html>
